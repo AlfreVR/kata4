@@ -31,6 +31,7 @@ public class SqliteCarLoader implements CarLoader{
         while(resultSet.next()){
             cars.add(newCar(resultSet));
         }
+        return cars;
     }
 
     private Car newCar(ResultSet resultSet) throws SQLException {
